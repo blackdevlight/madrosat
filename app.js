@@ -30,7 +30,7 @@ app.get('/enroll', (req, res) => {
 });
 
 
-const port = 3000 || process.env.PORT;
+const port =  process.env.PORT;
 app.listen(port, () => {
     `server started...`
 });
