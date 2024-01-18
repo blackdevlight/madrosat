@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: bold;
+    src: url('/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: Medium;
+    src: url('/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: Light;
+    src: url('/fonts/Poppins-Light.ttf');
+}
+.site-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fffaec;
+}
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+    
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo-img{
+    margin-left: 0.4rem;
+}
+.logo a{
+    color: #42a555;
+    font-family: bold;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+    margin-left: 1rem;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px 12px;
+}
+.nav-links li a{
+    color: #444;
+    font-family: Light;
+    font-size: 0.875rem;
+    display: block;
+    padding: 5px 8px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-links li a::after{
+    content: '';
+    background: #0f7023;
+    display: block;
+    height: 4px;
+    width: 0%;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.nav-links li a:hover{
+    color:#0f7023;
+    font-weight: 600;
+}
+.cta-btns ul li{
+    display: inline-block;
+    margin: 8px 10px;
+    list-style: none;
+}
+.cta-btns ul li a{
+    display: block;
+    font-size: 0.875rem;
+    font-family: Light;
+    text-decoration: none;
+    text-align: center;
+}
+#contact-btn a{
+    color: #0f7023;
+    font-weight: 600;
+}
+#enroll-btn a{
+    background-color: #0f7023;
+    border-radius: 30px;
+    color: white;
+    padding: 7px 18px;
+}
+.text-container{
+    padding: 100px 6%;
+}
+.text-container .intro-text h2{
+    color: #0f7023;
+    font-size: 3rem;
+    font-family: Bold;
+    width: 90%;
+}
+.intro-img-container{
+    display: flex;
+    margin: 2.5rem 0;
+}
+.left, .center{
+    justify-content: left;
+    align-items: center;
+}
+.introimg{
+    width: 33%;
+    min-height: 70%;
+    margin-right: 2.5rem;
+   
+}
+.introimg img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.right{
+    align-items: start;
+}
+.right-text{
+    margin: 1.5rem 0;
+}
+.right-text p{
+    color: #333;
+    font-family: Light;
+    font-size: 0.875rem;
+}
+.cta-btns-introimg{
+    display: block;
+    width: 100%;
+}
+.intro-btns a{
+    border-radius: 30px;
+    font-family: Light;
+    font-size: 0.975rem;
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    
+    
+}
+.cta-download-btn{
+    background-color: #1d8270;
+    color: white;
+}
+.cta-enroll-btn{
+    background-color: #febe53;
+    color: #0f7023;
+}
+.banner-container{
+    width: 100%;
+    margin: -4rem 0 3rem;
+}
+.banner-img{
+    width: 100%;
+}
+.learnmore-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 6%;
+    
+}
+
+.learnmore-text p{
+    color: black;
+    font-family: Light;
+    font-size: 0.975rem;
+    margin: 1rem 0;
+}
+.learnmore-text a{
+    background-color: #febe53;
+    color: black;
+    border-radius: 36px;
+    font-size: 0.901rem;
+    font-family: Light;
+    display: block;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 auto;
+}
+.learnmore-text h2{
+    font-family: Bold;
+    font-size: 2.875rem;
+    text-align: center;
+}
+.offer-containers{
+    padding: 1% 6%;
+}
+.offer-h2 {
+    font-size: 2.875rem;
+    font-family: Bold;
+    margin: 2rem 0;
+    text-align: center;
+}
+.hadith-container{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 6%;
+    text-align: right;
+}
+.quran{
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.quran h1{
+    font-family: Bold;
+    font-size: 1.3rem;
+}
+.hadith-container h2{
+    font-family: Light;
+    font-size: 1.8rem;
+}
+.hadith-container p{
+    font-family: Light;
+    font-size: 1.0rem;
+}
+.hadith{
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.offer{
+    padding: 30px 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.offer:hover{
+    transform: scale(1.05);
+    background:white;
+}
+.offer h2{
+    font-family: Bold;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+.offer p{
+    font-family: Light;
+    font-size: 0.875rem;
+}
+.mobile-nav-links, .menu-btn{
+   display: none;
+}
+.courses-container{
+    width: 88%;
+    padding: 100px 6% ;
+    margin: 0 0 2rem;
+}
+#courses-span{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-family: Bold;
+    text-align: center;
+    display: block;
+    font-variant-caps: all-small-caps;
+    font-size: 1.6rem;
+    margin: 0.5rem auto;
+    padding: 14px 20px;
+    width: 50%;
+}
+
+.ourprogram{
+    font-family: Bold;
+    font-size: 2.875rem;
+    text-align: center;
+}
+
+.programs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+.program{
+    background: #02AAB0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+min-height: 20vh;
+    max-width: 400px;
+    
+    margin: 2rem 0;
+}
+#program-title{
+    display: block;
+    font-family: Light;
+    font-size: 0.921rem;
+    text-align: center;
+}
+.program h1{
+    font-family: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+.firstprogram-section{
+    height: 40%;
+    padding: 20px;
+    color: white;
+}
+.program-details{
+background-color: white;
+height: 60%;
+padding: 30px;
+box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+border-radius: 10px;
+}
+.program-price{
+    font-family: bold;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+.time{
+    margin: 1rem 0 0;
+    font-size: 0.875rem;
+    font-family: Light;
+    text-align: center;
+}
+#month{
+    font-size: 1rem;
+}
+.program-det{
+    margin: 1rem 0;
+}
+.program-det ul li{
+    font-size: 0.875rem;
+    font-family: light;
+}
+.program-det a{
+    background-color: tomato;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 15px;
+    font-family: light;
+    font-size: 0.875rem;
+    width: 50%;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    text-decoration: none;
+}
+.classmodes-container{
+    padding: 100px 6%;
+}
+
+.classmode{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+.classmodes-container h2{
+    font-family: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.mode{
+ background-color: #fff;
+    padding: 30px;
+    max-width: 400px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 auto;
+}
+.mode ul li{
+    text-align: left;
+    list-style-type: none;
+    font-family: light;
+    font-size: 0.901rem;
+}
+.mode h1{
+    font-size: 1.5rem;
+    font-family: Bold;
+    margin: 1rem 0;
+    
+}
+.footer-container{
+    padding: 30px 6%;
+    border-top: 1px solid #cccccca6;
+}
+.news-letter p{
+    font-family: Light;
+    font-size: 0.875rem;
+    margin: 0.4rem 0;
+}
+.news-letter h2{
+    font-family: Light;
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+}
+.footers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.news-letter input{
+    padding:10px;
+    width: 70%;
+    font-family: light;
+}
+.news-letter button{
+    background: tomato;
+    border-color: #cccccca6;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: light;
+    font-size: 0.800rem;
+    padding: 10px;
+}
+.con{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.con a{
+    color:#02AAB0;
+    font-family: Light;
+    font-size: 0.890rem;
+    margin-left: 0.2rem;
+    text-decoration: none;
+}
+.con-img img{
+ margin: 0 1.4rem;   
+}
+.mobile-links-nav{
+    display: none;
+}
+.live-chat{
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+
+}
+.contact-section{
+    padding: 100px 6%;
+    width: 88%;
+    
+}
+   
+.contact-section h2{
+    font-size: 2.875rem;
+    font-family: Bold;
+    text-align: center;
+    margin: 1rem 0;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+
+}   
+.contact-div a{
+    color: #333;
+    width: 30%;
+    font-family: Bold;
+    font-size: 0.901rem;
+    display: flex;
+    margin: 1rem 0;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+}
+.contact-img{
+    margin-left: 0.7rem;
+}
+@media (max-width: 920px) {
+    .nav-links, .cta-btns{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile-links-nav{
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+        min-height: 30vh; 
+        width: 0%;
+        top: 9%;
+        right: 0%;
+        z-index: 1;
+        overflow-x: hidden;
+      
+        transition: 0.5s;
+        position: fixed;
+        background-color: #fffaec;
+        display: block;
+    }
+    .mob-links-nav, .mob-links-btns{
+        
+        padding: 4% 6%;
+    }
+    .mob-links-nav ul li{
+        list-style: none;
+    }
+    .mob-links-nav ul li a{
+        color: #333;
+        display: block;
+        font-family: Light;
+        font-size: 0.901rem;
+        text-decoration: none;
+        padding: 14px 18px;
+        
+    }
+    .show{
+        width: 100%;
+    }
+    .text-container{
+        padding: 100px 6%;
+    }
+    .text-container .intro-text h2{
+        color: #0f7023;
+        font-size: 2.0rem;
+        font-family: Bold;
+        width: 90%;
+    }
+    .intro-img-container{
+   display: block;
+    }
+  
+    .introimg{
+        width: 100%;
+        min-height: 50%;
+        margin-right: 2.5rem;
+       
+    }
+    .introimg img{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    .right{
+        align-items: start;
+    }
+    .right-text{
+        margin: 1.5rem 0;
+    }
+    .right-text p{
+        color: #333;
+        font-family: Light;
+        font-size: 0.875rem;
+    }
+    .cta-btns-introimg{
+        display: block;
+        width: 100%;
+    }
+    .intro-btns a{
+        border-radius: 30px;
+        font-family: Light;
+        font-size: 0.975rem;
+        display: block;
+        margin: 1rem auto;
+        width: 70%;
+        text-align: center;
+        padding: 10px 18px;
+        text-decoration: none;
+        
+        
+    }
+    .cta-download-btn{
+        background-color: #1d8270;
+        color: white;
+    }
+    .cta-enroll-btn{
+        background-color: #febe53;
+        color: #0f7023;
+    }
+    .mob-links-btns ul li{
+        display: block;
+        list-style-type: none;
+       padding-top: 20px;
+        
+    }
+    .mob-links-btns ul li a{ 
+        text-decoration: none;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #42a555;
+        color: #fff;
+         padding: 10px 18px;
+         font-family: light;
+         border-radius: 8px;
+         font-size: 0.875rem;
+    
+}
+    
+    .mob-links-btns ul li a:hover{
+    background-color: #000fff;
+    }
+    .offer{
+        padding: 30px 10px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+        margin: 0 auto;
+    }
+    
+    #courses-span{
+      
+        margin: 0.5rem auto;
+       
+        width: 80%;
+    }
+    .offer-h2 {
+        font-size: 1.875rem;
+        font-family: Bold;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .learnmore-text h2{
+        font-size: 1.875rem;
+       
+    }
+    .ourprogram{
+        font-family: Bold;
+        font-size: 1.875rem;
+        text-align: center;
+    }
+    
+}

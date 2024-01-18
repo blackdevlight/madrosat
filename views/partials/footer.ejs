@@ -1,0 +1,19 @@
+<div class="live-chat">
+    <a href="wa.link/ahvi59"><img src="images/whatsapp.svg" alt="chat in whatsapp" width="70px"></a>
+</div>
+
+<script>
+    const menuButton = document.querySelector('#menu-btn');
+    const navLinks = document.querySelector('.mobile-links-nav');
+    menuButton.addEventListener('click', ()=>{
+    document.getElementById('menu-btn').src = '/images/cancel.svg';
+    document.querySelector('.mobile-links-nav').classList.toggle('show');
+    if(!navLinks.classList.contains('show')){
+        document.getElementById('menu-btn').src = '/images/menu.svg';
+    }
+    });
+  
+</script>
+</body>
+
+</html>
