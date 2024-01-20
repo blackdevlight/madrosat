@@ -307,6 +307,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
+
 }
 .program{
     background: #02AAB0;  /* fallback for old browsers */
@@ -315,12 +316,12 @@ background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, F
 min-height: 20vh;
     max-width: 400px;
     
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 #program-title{
     display: block;
     font-family: Light;
-    font-size: 0.921rem;
+    font-size: 1.25rem;
     text-align: center;
 }
 .program h1{
@@ -336,7 +337,7 @@ min-height: 20vh;
 }
 .program-details{
 background-color: white;
-height: 60%;
+height: 65%;
 padding: 30px;
 box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
 border-radius: 10px;
@@ -348,7 +349,7 @@ border-radius: 10px;
     text-align: center;
 }
 .time{
-    margin: 1rem 0 0;
+    margin: 0.5rem 0 0;
     font-size: 0.875rem;
     font-family: Light;
     text-align: center;
@@ -411,47 +412,7 @@ border-radius: 10px;
     margin: 1rem 0;
     
 }
-.footer-container{
-    padding: 30px 6%;
-    border-top: 1px solid #cccccca6;
-}
-.news-letter p{
-    font-family: Light;
-    font-size: 0.875rem;
-    margin: 0.4rem 0;
-}
-.news-letter h2{
-    font-family: Light;
-    font-weight: 100;
-    font-size: 0.9rem;
-    margin: 0.4rem 0;
-}
-.footers{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-.news-letter input{
-    padding:10px;
-    width: 70%;
-    font-family: light;
-}
-.news-letter button{
-    background: tomato;
-    border-color: #cccccca6;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    font-family: light;
-    font-size: 0.800rem;
-    padding: 10px;
-}
-.con{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0.5rem 0;
-}
+
 .con a{
     color:#02AAB0;
     font-family: Light;
@@ -471,37 +432,50 @@ border-radius: 10px;
     right: 3%;
 
 }
-.contact-section{
-    padding: 100px 6%;
+.site-footer{
+    padding: 50px 6% 5px;
     width: 88%;
     
 }
    
-.contact-section h2{
-    font-size: 2.875rem;
+.site-footer h2{
+    font-size: 1.5rem;
     font-family: Bold;
     text-align: center;
     margin: 1rem 0;
+    border: 1px solid #ccc;
 }
-.contact{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-
-}   
-.contact-div a{
+.contact-me, .contact {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0.3rem 0;
+}
+.contact-me a, .contact a{
+    color: black;
+    display: inline-block;
+    font-family: Medium;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.site-footer p{
+    font-family: light;
     color: #333;
-    width: 30%;
-    font-family: Bold;
-    font-size: 0.901rem;
-    display: flex;
-    margin: 1rem 0;
-    justify-content: left;
-    align-items: center;
-    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    text-align: center;
 }
-.contact-img{
-    margin-left: 0.7rem;
+#courses-span-one{
+    margin: 0.5rem auto;
+       display: block;
+    width: 80%;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    padding: 20px;
+    font-family: Light;
+    font-size: 0.90rem;
+    font-weight: 500;
 }
 @media (max-width: 920px) {
     .nav-links, .cta-btns{
@@ -637,9 +611,11 @@ border-radius: 10px;
     }
     
     #courses-span{
-      
         margin: 0.5rem auto;
-       
+        width: 80%;
+    }
+    #courses-span-one{
+        margin: 0.5rem auto;
         width: 80%;
     }
     .offer-h2 {
